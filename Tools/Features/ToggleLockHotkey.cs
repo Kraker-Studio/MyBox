@@ -23,7 +23,11 @@ namespace MyBox.Internal
 			if (_inspectorWindow == null)
 			{
 				Object[] findObjectsOfTypeAll = Resources.FindObjectsOfTypeAll(inspectorWindowType);
-				_inspectorWindow = (EditorWindow) findObjectsOfTypeAll[0];
+				if(findObjectsOfTypeAll.Length > 1){
+					_inspectorWindow = (EditorWindow) findObjectsOfTypeAll[1]; // Fix for my Maho_Default layout
+				}else{
+					_inspectorWindow = (EditorWindow) findObjectsOfTypeAll[0];
+				}
 			}
 
 			if (_inspectorWindow != null && _inspectorWindow.GetType().Name == "InspectorWindow")
