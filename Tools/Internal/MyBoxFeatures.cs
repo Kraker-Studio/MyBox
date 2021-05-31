@@ -20,11 +20,11 @@ namespace MyBox.Internal
 		}
 
 
-		#region AutoSave
+#region AutoSave
 
 		private static bool AutoSaveIsEnabled
 		{
-			get => MyBoxSettings.AutoSaveEnabled;
+			get => false;//MyBoxSettings.AutoSaveEnabled;
 			set
 			{
 				{
@@ -47,10 +47,10 @@ namespace MyBox.Internal
 			return true;
 		}
 
-		#endregion
+#endregion
 
 
-		#region CleanupEmptyDirectories
+#region CleanupEmptyDirectories
 
 		private static bool CleanupEmptyDirectoriesIsEnabled
 		{
@@ -77,10 +77,10 @@ namespace MyBox.Internal
 			return true;
 		}
 
-		#endregion
+#endregion
 
 
-		#region IPrepare
+#region IPrepare
 
 		private static bool IPrepareIsEnabled
 		{
@@ -107,14 +107,14 @@ namespace MyBox.Internal
 			return true;
 		}
 
-		#endregion
+#endregion
 		
 		
-		#region Check For Updates
+#region Check For Updates
 
 		private static bool CheckForUpdatesEnabled
 		{
-			get => MyBoxSettings.CheckForUpdates;
+			get => false;//MyBoxSettings.CheckForUpdates;
 			set
 			{
 				{
@@ -137,7 +137,7 @@ namespace MyBox.Internal
 			return true;
 		}
 
-		#endregion
+#endregion
 	}
 }
 #endif
