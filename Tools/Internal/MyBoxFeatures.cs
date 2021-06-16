@@ -54,7 +54,7 @@ namespace MyBox.Internal
 
 		private static bool CleanupEmptyDirectoriesIsEnabled
 		{
-			get => MyBoxSettings.CleanEmptyDirectoriesFeature;
+			get => false; //MyBoxSettings.CleanEmptyDirectoriesFeature;
 			set
 			{
 				{
@@ -84,7 +84,7 @@ namespace MyBox.Internal
 
 		private static bool IPrepareIsEnabled
 		{
-			get => MyBoxSettings.PrepareOnPlaymode;
+			get => false; //MyBoxSettings.PrepareOnPlaymode;
 			set
 			{
 				{

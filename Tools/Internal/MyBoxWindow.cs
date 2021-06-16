@@ -30,17 +30,17 @@ namespace MyBox.Internal
 		private static void CheckForUpdates()
 		{
 			MyEditorEvents.OnEditorStarts -= CheckForUpdates;
-			MyBoxUtilities.GetMyBoxLatestVersionAsync(version =>
-			{
-				_installedVersion = MyBoxUtilities.GetMyBoxInstalledVersion();
-				_latestVersion = version;
-				if (!_installedVersion.VersionsMatch(_latestVersion))
-				{
-					var versions = "Installed version: " + _installedVersion.AsSting + ". Latest version: " + _latestVersion.AsSting;
-					var message = "It's time to update MyBox :)! Use \"Tools/MyBox/Update MyBox\". " + versions;
-					WarningsPool.Log(message);
-				}
-			});
+			// MyBoxUtilities.GetMyBoxLatestVersionAsync(version =>
+			// {
+			// 	_installedVersion = MyBoxUtilities.GetMyBoxInstalledVersion();
+			// 	_latestVersion = version;
+			// 	if (!_installedVersion.VersionsMatch(_latestVersion))
+			// 	{
+			// 		var versions = "Installed version: " + _installedVersion.AsSting + ". Latest version: " + _latestVersion.AsSting;
+			// 		var message = "It's time to update MyBox :)! Use \"Tools/MyBox/Update MyBox\". " + versions;
+			// 		WarningsPool.Log(message);
+			// 	}
+			// });
 		}
 
 
