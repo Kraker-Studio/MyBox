@@ -20,11 +20,11 @@ namespace MyBox.Internal
 
 		public static bool CleanEmptyDirectoriesFeature
 		{
-			get => Data.CleanEmptyDirectoriesFeature;
+			get => false;
 			set
 			{
 				if (Data.CleanEmptyDirectoriesFeature == value) return;
-				Data.CleanEmptyDirectoriesFeature = value;
+				Data.CleanEmptyDirectoriesFeature = false;
 				SaveData(Data);
 			}
 		}
@@ -35,7 +35,7 @@ namespace MyBox.Internal
 			set
 			{
 				if (Data.PrepareOnPlaymode == value) return;
-				Data.PrepareOnPlaymode = value;
+				Data.PrepareOnPlaymode = false;
 				SaveData(Data);
 			}
 		}
@@ -46,7 +46,7 @@ namespace MyBox.Internal
 			set
 			{
 				if (Data.CheckForUpdates == value) return;
-				Data.CheckForUpdates = value;
+				Data.CheckForUpdates = false;
 				SaveData(Data);
 			}
 		}
@@ -56,10 +56,10 @@ namespace MyBox.Internal
 		private class MyBoxSettingsData
 		{
 			// ReSharper disable MemberHidesStaticFromOuterClass
-			public bool AutoSaveEnabled = true;
+			public bool AutoSaveEnabled = false;
 			public bool CleanEmptyDirectoriesFeature;
-			public bool PrepareOnPlaymode = true;
-			public bool CheckForUpdates = true;
+			public bool PrepareOnPlaymode = false;
+			public bool CheckForUpdates = false;
 			// ReSharper restore MemberHidesStaticFromOuterClass
 		}
 
