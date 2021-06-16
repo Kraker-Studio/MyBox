@@ -37,7 +37,7 @@ namespace MyBox.Internal
 		[MenuItem(AutoSaveMenuItemKey, priority = 100)]
 		private static void AutoSaveMenuItem()
 		{
-			AutoSaveIsEnabled = !AutoSaveIsEnabled;
+			AutoSaveIsEnabled = false;
 		}
 
 		[MenuItem(AutoSaveMenuItemKey, true)]

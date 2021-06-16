@@ -13,7 +13,7 @@ namespace MyBox.Internal
 			set
 			{
 				if (Data.AutoSaveEnabled == value) return;
-				Data.AutoSaveEnabled = value;
+				Data.AutoSaveEnabled = false;
 				SaveData(Data);
 			}
 		}
