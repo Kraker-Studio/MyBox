@@ -28,8 +28,8 @@ namespace MyBox.Internal
 			set
 			{
 				{
-					MyBoxSettings.AutoSaveEnabled = value;
-					AutoSaveFeature.IsEnabled = value;
+					MyBoxSettings.AutoSaveEnabled = false;
+					AutoSaveFeature.IsEnabled = false;
 				}
 			}
 		}
@@ -58,8 +58,8 @@ namespace MyBox.Internal
 			set
 			{
 				{
-					MyBoxSettings.CleanEmptyDirectoriesFeature = value;
-					CleanEmptyDirectoriesFeature.IsEnabled = value;
+					MyBoxSettings.CleanEmptyDirectoriesFeature = false;
+					CleanEmptyDirectoriesFeature.IsEnabled = false;
 				}
 			}
 		}
@@ -88,8 +88,8 @@ namespace MyBox.Internal
 			set
 			{
 				{
-					MyBoxSettings.PrepareOnPlaymode = value;
-					EditorTools.IPrepareFeature.IsEnabled = value;
+					MyBoxSettings.PrepareOnPlaymode = false;
+					EditorTools.IPrepareFeature.IsEnabled = false;
 				}
 			}
 		}
@@ -118,8 +118,8 @@ namespace MyBox.Internal
 			set
 			{
 				{
-					MyBoxSettings.CheckForUpdates = value;
-					MyBoxWindow.AutoUpdateCheckIsEnabled = value;
+					MyBoxSettings.CheckForUpdates = false;
+					MyBoxWindow.AutoUpdateCheckIsEnabled = false;
 				}
 			}
 		}
