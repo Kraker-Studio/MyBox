@@ -14,7 +14,7 @@ namespace MyBox.Internal
 	/// </summary>
 	public class ImageToStringConverterEditor : EditorWindow
 	{
-		[MenuItem("Tools/MyBox/Image To String Converter", false, 50)]
+		//[MenuItem("Tools/MyBox/Image To String Converter", false, 50)]
 		private static void CreateWindow()
 		{
 			var window = GetWindow<ImageToStringConverterEditor>(false, "Image To String Converter");

@@ -34,13 +34,13 @@ namespace MyBox.Internal
 			}
 		}
 
-		[MenuItem(AutoSaveMenuItemKey, priority = 100)]
+		//[MenuItem(AutoSaveMenuItemKey, priority = 100)]
 		private static void AutoSaveMenuItem()
 		{
 			AutoSaveIsEnabled = false;
 		}
 
-		[MenuItem(AutoSaveMenuItemKey, true)]
+		//[MenuItem(AutoSaveMenuItemKey, true)]
 		private static bool AutoSaveMenuItemValidation()
 		{
 			Menu.SetChecked(AutoSaveMenuItemKey, AutoSaveIsEnabled);
@@ -64,13 +64,13 @@ namespace MyBox.Internal
 			}
 		}
 
-		[MenuItem(CleanupEmptyDirectoriesMenuItemKey, priority = 100)]
+		//[MenuItem(CleanupEmptyDirectoriesMenuItemKey, priority = 100)]
 		private static void CleanupEmptyDirectoriesMenuItem()
 		{
 			CleanupEmptyDirectoriesIsEnabled = !CleanupEmptyDirectoriesIsEnabled;
 		}
 
-		[MenuItem(CleanupEmptyDirectoriesMenuItemKey, true)]
+		//[MenuItem(CleanupEmptyDirectoriesMenuItemKey, true)]
 		private static bool CleanupEmptyDirectoriesMenuItemValidation()
 		{
 			Menu.SetChecked(CleanupEmptyDirectoriesMenuItemKey, CleanupEmptyDirectoriesIsEnabled);
@@ -94,13 +94,13 @@ namespace MyBox.Internal
 			}
 		}
 
-		[MenuItem(IPrepareMenuItemKey, priority = 100)]
+		//[MenuItem(IPrepareMenuItemKey, priority = 100)]
 		private static void IPrepareMenuItem()
 		{
 			IPrepareIsEnabled = !IPrepareIsEnabled;
 		}
 
-		[MenuItem(IPrepareMenuItemKey, true)]
+		//[MenuItem(IPrepareMenuItemKey, true)]
 		private static bool IPrepareMenuItemValidation()
 		{
 			Menu.SetChecked(IPrepareMenuItemKey, IPrepareIsEnabled);
@@ -124,13 +124,13 @@ namespace MyBox.Internal
 			}
 		}
 
-		[MenuItem(CheckForUpdatesKey, priority = 100)]
+		//[MenuItem(CheckForUpdatesKey, priority = 100)]
 		private static void CheckForUpdatesMenuItem()
 		{
 			CheckForUpdatesEnabled = !CheckForUpdatesEnabled;
 		}
 
-		[MenuItem(CheckForUpdatesKey, true)]
+		//[MenuItem(CheckForUpdatesKey, true)]
 		private static bool CheckForUpdatesMenuItemValidation()
 		{
 			Menu.SetChecked(CheckForUpdatesKey, CheckForUpdatesEnabled);

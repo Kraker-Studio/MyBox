@@ -44,7 +44,7 @@ namespace MyBox.Internal
 		}
 
 
-		[MenuItem("Tools/MyBox/MyBox Window", priority = 1)]
+		//[MenuItem("Tools/MyBox/MyBox Window", priority = 1)]
 		private static void MyBoxWindowMenuItem()
 		{
 			_windowInstance = GetWindow<MyBoxWindow>();

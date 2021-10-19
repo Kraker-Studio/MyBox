@@ -12,19 +12,19 @@ namespace MyBox.Internal
 	{
 		private const string MenuItem = "Show Serialized Properties";
 		
-		[MenuItem("CONTEXT/Component/" + MenuItem)]
+		//[MenuItem("CONTEXT/Component/" + MenuItem)]
 		static void ContextMenuItem(MenuCommand command)
 		{
 			OpenPropertyViewer(command.context);
 		}
 		
-		[MenuItem("Assets/" + MenuItem)]
+		//[MenuItem("Assets/" + MenuItem)]
 		private static void AssetsMenuItem()
 		{
 			OpenPropertyViewer(Selection.activeObject);
 		}
 		
-		[MenuItem("Assets/" + MenuItem, true)]
+		//[MenuItem("Assets/" + MenuItem, true)]
 		private static bool AssetsMenuItemValidator()
 		{
 			return Selection.activeObject != null;

@@ -46,7 +46,7 @@ namespace MyBox.Internal
 		private const string BackMenuLabel = "Tools/MyBox/Back In Selection History %#[";
 		private const string ForwardMenuLabel = "Tools/MyBox/Forward In Selection History %#]";
 
-		[MenuItem(BackMenuLabel)]
+		//[MenuItem(BackMenuLabel)]
 		private static void Back()
 		{
 			if (_activeSelection != null) NextSelections.Push(_activeSelection);
@@ -56,7 +56,7 @@ namespace MyBox.Internal
 			_ignoreNextSelectionChangedEvent = true;
 		}
 
-		[MenuItem(ForwardMenuLabel)]
+		//[MenuItem(ForwardMenuLabel)]
 		private static void Forward()
 		{
 			if (_activeSelection != null) PreviousSelections.Push(_activeSelection);
@@ -66,13 +66,13 @@ namespace MyBox.Internal
 			_ignoreNextSelectionChangedEvent = true;
 		}
 
-		[MenuItem(BackMenuLabel, true)]
+		//[MenuItem(BackMenuLabel, true)]
 		static bool ValidateBack()
 		{
 			return PreviousSelections.Count > 0;
 		}
 
-		[MenuItem(ForwardMenuLabel, true)]
+		//[MenuItem(ForwardMenuLabel, true)]
 		static bool ValidateForward()
 		{
 			return NextSelections.Count > 0;
